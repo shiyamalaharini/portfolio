@@ -750,7 +750,7 @@ header .navbar ul li a:hover{
 }
 
 /* For screens smaller than 400px (Mobile) */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     header {
         width: 100vw;
         color: #d81f97;
@@ -784,7 +784,7 @@ header .navbar ul li a:hover{
         font-size: 1.8rem; 
         margin: 0 0.5rem; 
     }
-}
+} */
 
 /* SKILL */
 
