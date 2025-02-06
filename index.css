@@ -26,7 +26,7 @@ html {
     /* overflow-x: hidden; */
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
     width: 1.4rem;
 }
 
@@ -36,7 +36,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     background: var(--yellow);
-}
+} */
 
 body {
     background:rgb(1, 1, 34);
@@ -67,7 +67,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--yellow);
+    background:blue;
 }
 
 .heading {
@@ -107,7 +107,7 @@ header {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,14 +115,16 @@ header {
 }
 .logo {
    font-size: 2.5rem;
-   color: var(--text-color);
+   /* color: var(--text-color); */
    font-weight: 700;
    cursor: default;
    color: white;
 }
+.logo:hover{
+    color:red;
+}
 .navbar a {
    font-size: 1.5rem;
-   color: var(--text-color);
    margin-left: 4rem;
    font-weight: 700;
    color: white;
@@ -133,88 +135,8 @@ header {
 }
 #menu-icon {
    font-size: 3.6rem;
-   color: var(--text-color);
    display: none;
 }
-
-
-
- /* header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    height: 100%;
-    width: 35rem;
-    background: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
-    text-align: center;
-}  */
-/*  
-
-header .user img {
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: .7rem;
-    box-shadow: 0  15px 15px white;
-}
-header .user img:hover {
-    box-shadow: 0  15px 15px #271bc9;
-}
-
-header .user .name {
-    font-size: 3.5rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: #fff;
-}
-
-header .user .post {
-    font-size: 2rem;
-    color: #eee;
-}
-
-header .navbar {
-    width: 100%;
-}
-
-header .navbar ul {
-    list-style: none;
-    padding: 1rem 3rem;
-}
-
-header .navbar ul li a {
-    display: block;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    background: #424143;
-    color: #fff;
-    font-size: 2rem;
-    border-radius: 5rem;
-}
-
-header .navbar ul li a:hover {
-    background: blue;
-    border-radius: 50%;
-} */
-
-/* #menu {
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    padding: 1rem 1.5rem;
-    z-index: 1000;
-    display: none;
-} */
 
 header{
     /* position: fixed; */
@@ -225,22 +147,13 @@ header{
     /* background-color: #2980b9; */
 }
 
-header .logo h2{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 10px;
-    color: white;
-}
+
 
 header .navbar ul li{
     list-style-type: none;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    top: 0px;
-}
+
 
 header .navbar ul{
     display: flex;
@@ -255,10 +168,7 @@ header .navbar ul li a{
     cursor: pointer;
 }
 
-header .navbar ul li a:hover{
-    text-decoration: underline;
-    filter: drop-shadow(0 0 10px black);
-}
+
 
 .home {
     display: flex;
@@ -319,18 +229,6 @@ header .navbar ul li a:hover{
     flex-wrap: wrap;
 }
 
-/* .about .row .info h3 {
-    font-size: 2rem;
-    color: yellow;
-    padding: 1rem 0;
-    font-weight: normal;
-}
-
-.about .row .info h3 span {
-    color: #eee;
-    padding: 0 .5rem;
-
-} */
 
 .about .row .counter .box {
     width: 20rem;
@@ -338,67 +236,6 @@ header .navbar ul li a:hover{
     text-align: center;
     padding: 2rem;
     margin: 2rem;
-}
-
-/* .about .row .counter .box span {
-    font-size: 4rem;
-    color: rgb(125, 8, 28);
-} */
-
-/* .about .row .counter .box h3 {
-    font-size: 2rem;
-    color: #fff;
-} */
-
-.education .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
-}
-
-.education .box-container .box {
-    width: 27rem;
-    margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid #fff;
-    position: relative;
-}
-
-.education .box-container .box span {
-    font-size: 1.3rem;
-    background: #222;
-    color: #fff;
-    border-radius: 5rem;
-    padding: .5rem 2.5rem;
-}
-
-.education .box-container .box h3 {
-    font-size: 2rem;
-    color: #fff;
-    padding-top: 1.5rem;
-}
-
-.education .box-container .box p {
-    font-size: 1.4rem;
-    color: #eee;
-    padding: 1rem 0;
-}
-
-.education .box-container .box i {
-    position: relative;
-    top: -1.5rem;
-    left: -2.5rem;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    color: #fff;
-    background: var(--yellow);
 }
 
 .projects .box-container {
@@ -560,32 +397,6 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media query */
 
 /* For screens smaller than 1200px */
@@ -659,37 +470,7 @@ header .navbar ul li a:hover{
         margin: 3rem 0;
     
     }
-    /* header {
-        left: -140%;
-    }
-    .navbar{
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 320px;
-        background-color: #333;
-
-    }
-    .navbar .nav__list{
-        flex-direction: row;
-        padding-top: 60px;
-
-    } */
-
     
-
- 
-
-    /* header.toggle {
-        left: 0%;
-    }
-
-    body {
-        padding: 0;
-    } */
-
-    /* Contact Section Adjustments */
     .contact .row {
         flex-direction: column; 
         padding: 2rem 1rem;
@@ -899,7 +680,7 @@ header .navbar ul li a:hover{
 
   /* education */
   .ag-format-container {
-    width: 1142px;
+    /* width: 1142px; */
     margin: 0 auto;
   }
   .ag-courses_box {
@@ -987,14 +768,7 @@ header .navbar ul li a:hover{
   .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
     background-color: #952aff;
   }
-  .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-    background-color: #cd3e94;
-  }
-  .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-    background-color:   #6f1bd3;
-  }
-  
-  
+
   
   @media only screen and (max-width: 979px) {
     .ag-courses_item {
